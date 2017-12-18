@@ -1,0 +1,25 @@
+{%extends "base.html"%}
+{%block title%}
+     Item
+{%endblock%}
+{%block content%}
+<div>{{message}}</div>
+{%if lst_item%}
+
+    {% for item in lst_fobj %}
+    <div class="row">
+        {% for obj in item %}
+
+         <div class="col-sm-3">
+             <a href="/item/view/{{obj.id}}"> <img src="{{obj.imageurl.url}}" class="img-responsive img-rounded"/></a>
+             <p></p><p><a href="/item/view/{{obj.id}}" class="btn btn-info btn-lg">{{obj.name}}</a></p>
+         </div>
+
+        {% endfor %}
+     </div>
+
+    {% endfor %}
+
+
+{%endif%}
+{%endblock%}

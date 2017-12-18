@@ -1,0 +1,35 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+    <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>{%block title%}{%endblock%}</title>
+            <link rel="stylesheet" href="/static/mbt/bootstrap/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+            <script src="/static/mbt/bootstrap2/js/bootstrap.min.js" ></script>
+            <script src="/static/mbt/jquery/jquery-1.11.3.min.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            {%include "includes/nav.html"%}
+            {%block nav%}{%endblock%}
+            {%block search%}{%endblock%}
+            {%block slide%}{%endblock%}
+            <div class="row">
+                <div class="col-sm-8">
+                    {%block content%}{%endblock%}
+                </div>
+                <div class="col-sm-4 well">
+                    {%block sidebar%}{%endblock%}
+                 </div>
+            </div>
+
+            {%block footer%}{%endblock%}
+        </div>
+
+
+    </body>
+</html>

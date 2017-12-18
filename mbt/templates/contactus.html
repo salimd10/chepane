@@ -1,0 +1,25 @@
+{%extends "base.html"%}
+{%block title%}
+    contact us
+{%endblock%}
+{%block content%}
+
+    <p>
+        Please give us your feed back through our feedback form
+    </p>
+
+    <form action="/thank-you/" method="GET" class="form-group" role="form">
+        <div class="form-group">
+            <input type="text" maxlength="50" placeholder="Name" name="name" class="form-control"/><br/>
+            <input type="text" maxlength="50" placeholder="Email" name="email" class="form-control"/><br/>
+            <textarea maxlength="300"  placeholder="Your feedback" name="feedback" class="form-control"></textarea>
+            <br/>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+
+    </form>
+
+{%endblock%}
+{%block sidebar%}
+{%include "includes/sidebar.html"%}
+{%endblock%}

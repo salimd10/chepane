@@ -1,0 +1,32 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">HungerDey!</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav nav-pills">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="/restaurants">Restaurants</a></li>
+                <li><a href="/contact_us">Contact us</a></li>
+            </ul>
+            <div class="nav navbar-nav navbar-right">
+                <form action="/search" method="GET" class="form-inline" role="form">
+                    <input type="text" maxlength="30" name="search" value="{{query|escape}}" placeholder="search" class="form-control"/>&nbsp;
+                    <button type="submit" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span>search</button>
+                </form>
+             </div>
+
+        </div>
+    </div>
+</nav>
+<div>
+</div>
+
+<span class="glyphicon glyphicon-twitter label label-danger">
+</span>
+
+<form action="/search" method="GET" class="form-inline" role="form">
+                    			<li><input type="text" maxlength="30" name="search" value="{{query|escape}}" placeholder="search" class="form-control"/></li>&nbsp;
+                    			<li><button type="submit" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span>search</button></li>
+                			</form>

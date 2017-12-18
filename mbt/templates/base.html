@@ -1,0 +1,136 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>{%block title%}{%endblock%}</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Pasta Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="/static/mbt/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/static/mbt/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="/static/mbt/js/jquery-1.11.1.min.js"></script>
+    <script src="/static/mbt/js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="/static/mbt/js/move-top.js"></script>
+<script type="text/javascript" src="/static/mbt/js/mbt-ajax.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<div class="header-nav">
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>-->
+					    <a class="navbar-brand" href="/"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i><span>C</span>hepane</a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="hvr-bounce-to-bottom"><a href="/">Home</a></li>
+							<li class="hvr-bounce-to-bottom"><a href="#">About</a></li>
+							<li class="hvr-bounce-to-bottom"><a href="/markets">Markets</a></li>
+							<li class="hvr-bounce-to-bottom"><a href="/contact_us">Contact us</a></li>
+						</ul>
+                        <ul class="nav navbar-nav navbar-left">
+							<br/>
+                			<form action="/search" method="GET" class="form-inline" role="form">
+                    			<li><input type="text" maxlength="30" name="search" value="{{query|escape}}" placeholder="search" class="form-control"/></li>
+                    			<!--<li><button type="submit" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span>search</button></li>-->
+                			</form>
+             			</ul>
+					</div><!-- /navbar-collapse -->
+				</nav>
+			</div>
+		</div>
+	</div>
+<div class="spacer">
+ <br/><br/>
+</div>
+<!-- //header -->
+{%block banner%}{%endblock%}
+<div class="container">
+{%block content%}
+	<br/><br/><br/><br/>
+	{%endblock%}
+</div>
+{%block search%}{%endblock%}
+
+{%block customer%}{%endblock%} 
+<!--- footer --->
+<br/><br/><br/><br/><br/><br/><br/>
+	<div class="footer">
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-3 footer-grid">
+					<h3>Extras</h3>
+					<p>Ut rutrum neque a mollis laoreet diam enim feuiat dui nec ulacoper quam felis id diam. Nunc ut tortor ligula eu petiu risus. Pelleesque conquat dignissim lacus quis altrcies.</p>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<h3>Recent Posts</h3>
+					<ul>
+						<li><a href="#">Vestibulum felis</a></li>
+						<li><a href="#">Mauris at tellus</a></li>
+						<li><a href="#">Donec ut lectus</a></li>
+						<li><a href="#">vitae interdum</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<h3>links</h3>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Markets</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">cantact us </a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<h3>Contact Us</h3>
+					<p>cantact info of chepane.com</p>
+					<div class="footer-grid-address">
+						<p>Tel.:08045678900</p>
+						<p>Email: <a class="email-link" href="#">chepane.com</a></p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"> </div>
+	<div class="copy-right">
+		<p>Copyright © 2017 chepane. All rights reserved | Design by <a href="#">SayTech</a></p>
+	</div>
+<!--- //footer --->
+<!-- for bootstrap working -->
+		<script src="/static/mbt/js/bootstrap.js"> </script>
+<!-- //for bootstrap working -->
+</body>
+</html>

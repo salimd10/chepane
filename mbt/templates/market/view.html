@@ -1,0 +1,46 @@
+{%extends "base.html"%}
+{%block title%}
+    view
+{%endblock%}
+{%block content%}
+{%if item%}
+<div>
+    <p>
+        Below is your choice of food.
+    </p>
+</div>
+ <table class="table table-striped">
+
+        <tr align="center">
+            <td colspan="2"><img src="{{dish.imageurl.url}}"  width="300" height="400" class="img-responsive"></td>
+
+        </tr>
+        <tr>
+            <td>{{item.name}}</td><td> &#8358 {{item.price}}{{item.description}} </td>
+        </tr>
+
+        <tr>
+
+            <td>{{market.name}}</td><td>{{market.address}}</td>
+
+        </tr>
+        <tr>
+            <td>
+                <button id="like_btn" data-id="{{item.id}}" class="btn btn-primary" type="button">
+                    <span class="glyphicon glyphicon-thumbs-up"></span>Like
+                </button>
+
+            </td>
+
+            <td id="dsp_like"> {{item.likes}}</td>
+        </tr>
+
+
+
+ </table>
+{%endif%}
+{%endblock%}
+{%block sidebar%}
+{%include "includes/sidebar.html"%}
+{%endblock%}
+

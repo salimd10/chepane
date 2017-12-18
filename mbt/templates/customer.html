@@ -1,0 +1,63 @@
+<!-- customer -->
+	<div class="customer">
+		<div class="container">
+			<h3>Customer Says</h3>
+			<div class="customer-grids">
+				<ul id="flexiselDemo1">			
+					<li>
+						<div class="customer-grid">
+							<p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+								consectetur, adipisci velit, sed quia non numquam eius modi tempora 
+								incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+							<h4>John Smith <span>Manager</span></h4>
+						</div>
+					</li>
+					<li>
+						<div class="customer-grid">
+							<p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+								consectetur, adipisci velit, sed quia non numquam eius modi tempora 
+								incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+							<h4>Micheal Robert <span>Head Cook</span></h4>
+						</div>
+					</li>
+					<li>
+						<div class="customer-grid">
+							<p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+								consectetur, adipisci velit, sed quia non numquam eius modi tempora 
+								incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+							<h4>Williumson <span>Ass Manager</span></h4>
+						</div>
+					</li>
+				</ul>
+				<script type="text/javascript">
+							$(window).load(function() {
+								$("#flexiselDemo1").flexisel({
+									visibleItems: 3,
+									animationSpeed: 1000,
+									autoPlay: true,
+									autoPlaySpeed: 3000,    		
+									pauseOnHover: true,
+									enableResponsiveBreakpoints: true,
+									responsiveBreakpoints: { 
+										portrait: { 
+											changePoint:480,
+											visibleItems: 1
+										}, 
+										landscape: { 
+											changePoint:640,
+											visibleItems:3
+										},
+										tablet: { 
+											changePoint:768,
+											visibleItems: 3
+										}
+									}
+								});
+								
+							});
+					</script>
+					<script type="text/javascript" src="static/mbt/js/jquery.flexisel.js"></script>
+			</div>
+		</div>
+	</div>
+<!-- //customer -->

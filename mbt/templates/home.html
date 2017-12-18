@@ -1,0 +1,55 @@
+{%extends "base.html"%}
+{%block title%}
+    Home
+{%endblock%}
+{%block banner%}
+
+{%endblock%}
+{%block content%}
+<div class="well">
+    <h3 class="text-primary">Welcome to chepane.com !</h3>
+    <p class="debitis">Browse through our list of markets to get the latest price on diffrent food items.</p>
+</div>
+<div class="well">
+        		{%if table_items%}
+ <table class="table table-striped">
+<thead>
+<th>Name</th>
+<th>unit</th>
+<th>price</th>
+</thead>
+	 <tbody>
+	 	{%for item in table_items%}
+			<tr>
+				<td>{{item.name}}</td>
+				<td>{{item.description}}</td>
+				<td>{{item.price}}</td>
+			</tr>
+		{%endfor%}
+	 </tbody>
+ </table>
+{%endif%}
+</div>
+    {%if dishlist%}
+        {%for lst in dishlist%}
+        <div class="row">
+            {%for dish in lst%}
+            <div class="col-sm-4">
+                <a href="dishes/order/{{dish.id}}" ><img src="{{dish.imageurl.url}}"  class="img-responsive img-rounded"/></a>
+                <br/>
+                <a href="dishes/order/{{dish.id}}" class="btn btn-info btn-lg">{{dish.name}}</a>
+            </div>
+            {%endfor%}
+        </div>
+        </br></br>
+
+        {%endfor%}
+    {%endif%}
+    {%if emptyquery%}
+        <div class="well">
+            <p class="debitis">{{emptyquery}}</p>
+        </div>
+
+    {%endif%}
+
+{%endblock%}

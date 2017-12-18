@@ -1,0 +1,94 @@
+
+<!-- banner -->
+	<div class="banner">
+			<!-- Slider-starts-Here -->
+				<!--<script src="static/mbt/js/responsiveslides.min.js"></script>
+				 <script>
+				    // You can also use "$(window).load(function() {"
+				    $(function () {
+				      // Slideshow 4
+				      $("#slider3").responsiveSlides({
+				        auto: true,
+				        pager: false,
+				        nav: false,
+				        speed: 500,
+				        namespace: "callbacks",
+				        before: function () {
+				          $('.events').append("<li>before event fired.</li>");
+				        },
+				        after: function () {
+				          $('.events').append("<li>after event fired.</li>");
+				        }
+				      });
+				
+				    });
+				  </script>-->
+			<!--//End-slider-script -->
+		<!--	<div  id="top" class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<li>
+						<div class="banner-info">
+							<div class="baner-inf">
+								<h1>Hello!</h1>
+								<p>Short Of Time? Call And Have you Meal Delivered!</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="banner-info1">
+							<div class="baner-inf">
+								<h1>At Once</h1>
+								<p>You Will Notice That We Are Waiting For You!</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="banner-info2">
+							<div class="baner-inf">
+								<h1>An Ideal</h1>
+								<p>Place To Get A Happy Meal</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>-->
+		{%if table_items%}
+ <table class="table table-striped">
+<thead>
+<th>Name</th>
+<th>unit</th>
+<th>price</th>
+</thead>
+	 <tbody>
+	 	{%for item in table_items%}
+			<tr>
+				<td>{{item.name}}</td>
+				<td>{{item.description}}</td>
+				<td>{{item.price}}</td>
+			</tr>
+		{%endfor%}
+	 </tbody>
+ </table>
+{%endif%}
+
+		<!--<div class="banner-bottom-grids">
+
+			<div class="container">
+				{%for dish in like %}
+					<div class="col-md-3 banner-bottom-grid">
+						<div class="banner-bottom-grd back">
+							<img src="{{dish.imageurl.url}}" class="img-responsive img-rounded"/>
+							<div class="clearfix"> </div>
+						</div>
+						<p class="debitis">{{dish.description}}</p>
+						<div class="more">
+							<a href="dishes/order/{{dish.id}}">View</a>
+						</div>
+					</div>
+				{%endfor%}
+				<div class="clearfix"> </div>
+			</div>
+		</div>-->
+	</div>
+<!-- //banner -->
+

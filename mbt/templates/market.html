@@ -1,0 +1,28 @@
+{%extends "base.html"%}
+{%block title%}
+Restaurants
+{%endblock%}
+{%block content%}
+{%if lst_markets%}
+<div>
+<table class="table table-striped table-responsive">
+	<thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+	<tbody>
+		{%for market in lst_markets%}
+			<tr>
+				<td><a href="/item/{{market.id}}">{{market.name}}</a></td>
+				<td>{{market.address}}</td>
+			</tr>
+		{%endfor%}
+	</tbody>
+</table>
+{%else%}
+<div><p> No Registered market Yet</p></div>
+{%endif%}
+</div>
+{%endblock%}
